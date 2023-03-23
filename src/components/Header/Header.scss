@@ -1,0 +1,50 @@
+.header{
+    width:100%;
+    height:48px;
+    background-color: #fff100;
+    display: flex;
+    align-items: center;
+}
+.hamburger{
+    margin-left: 20%;
+    width:1.5%;
+
+}
+.header-logo{
+    margin-left: 1%;
+    width: 6%;
+    filter: grayscale(100%);
+}
+.left-arrow{
+    margin-left: 4%;
+}
+.right-arrow{
+    margin-left: 1%;
+}
+.header-icons{
+    display: flex;
+    list-style: none;
+    margin-left: 2%;
+    width:21%;
+}
+.icon-svg{
+margin-right: 4px;
+}
+
+.header-icons li{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5%;
+}
+.header-paragraph{
+    margin-left: 1%;
+    font-size: 14px;
+    font-weight: 300;
+}
+.shop-now{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}

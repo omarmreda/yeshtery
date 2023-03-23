@@ -1,0 +1,39 @@
+.footer{
+    width: 100%;
+    height:495px;
+    background-color: #3c3c3b;
+    display: flex;
+    justify-content: center;
+}
+.upper-section{
+display: flex;
+}
+.left-section{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+.footer-paragraph{
+    margin-top:28.8px;
+    color: #fff;
+    font-size: 16px;
+    height:252.02px;
+}
+.subscribe{
+margin-top: 46.42px;
+}
+.footer-content{
+    width: 60%;
+}
+.right-icons{
+    color:#fff;
+    list-style: none;
+    margin-top: 28px;
+}
+.email-input{
+    width:100%;
+}
+.hr{
+    border: 0.5px solid #b6b6b6
+}
