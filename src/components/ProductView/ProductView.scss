@@ -188,14 +188,15 @@
 .quantity-bar {
     background-color: #f5f5f5;
     border: 0.5px solid #d9d9d9;
-    width: 40%;
+    width: 45%;
+    color: $secondary-color;
     height: 35px;
     border-radius: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2px;
-    font-size: 12px;
+    padding: 2px;
+    font-size: 13px;
 }
 .selected-color {
     border: 1px solid $secondary-color;
@@ -214,9 +215,10 @@
     background-color: $primary-color;
     border: none;
     border-radius: 50%;
-    width: 10%;
+    width: 14%;
     cursor: pointer;
-    height: 22px;
+    height: 27px;
+    font-size: 16px;
 }
 .decrement {
     display: flex;
@@ -225,9 +227,10 @@
     background-color: $primary-color;
     border: none;
     border-radius: 50%;
-    width: 10%;
+    width: 14%;
     cursor: pointer;
-    height: 22px;
+    height: 27px;
+    font-size: 16px;
 }
 .buttons {
     display: flex;
@@ -245,6 +248,10 @@
     cursor: pointer;
     font-size: 12px;
     font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+.add-to-cart-button:hover{
+    background-color: #1e1252;
 }
 .pickup-button {
     width: 100%;
@@ -258,3 +265,23 @@
     border-radius: 24px;
     cursor: pointer;
 }
+.pop-up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    position: fixed;
+    top: 20px;
+    margin : 0 auto;
+    cursor: pointer;
+    width:250px;
+    height: 40px;
+    background-color: rgba(12, 139, 50, 0.574);
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+    z-index: 99999;
+    padding: 5px;
+    color:#fff;
+
+  }

@@ -21,11 +21,20 @@ export default class Menu extends Component {
         this.setState((prevState) => ({
             showCart: !prevState.showCart
         }))
+        if (this.state.showCart === true) {
+            document.body.style.overflow = 'auto'
+        } else {
+            document.body.style.overflow = 'hidden'
+        }
     }
     render() {
         const { cartCount } = this.props
         return (
             <header className="menu">
+                <div
+                    className="backdrop"
+                    style={{ display: this.state.showCart ? 'block' : 'none' }}
+                ></div>
                 <form className="search-input">
                     <SearchIcon className="search-icon" />
                     <input
@@ -57,6 +66,7 @@ export default class Menu extends Component {
                     <Cart
                         onClick={this.handleCartClick}
                         cartCount={cartCount}
+                        showCart={this.state.showCart}
                     />
                 )}
             </header>

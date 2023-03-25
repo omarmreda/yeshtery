@@ -11,14 +11,16 @@ export default function Footer() {
                         <p className="footer-paragraph">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
-                            laoreet dolore.
+                            laoreet dolore magna aliquam erat volutpat. Ut wisi
+                            enim ad minim veniam, ea commodo consequat.
+                            <br /> <br /> Duis autem vel eum iriure dolor in
+                            hendrerit in vulputate velit esse molestie
+                            consequat, vel illum dolore eu feugiat nulla. Lorem
+                            ipsum dolor sit amet.
                             <br /> <br />
                             Ut wisi enim ad minim veniam, quis nostrud exerci
                             tation ullamcorper suscipit lobortis nisl ut aliquip
-                            dolor
-                            <br /> <br />m nonummy nibh euismod tincidunt ut
-                            laoreet dolore magna aliquam erat volutpat. Ut wisi
-                            enim ad minim veniam, quis
+                            ex ea commodo consequat.
                         </p>
                     </div>
                     <div className="vertical-line"></div>

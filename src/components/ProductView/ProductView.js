@@ -5,7 +5,7 @@ import { ReactComponent as YellowStar } from '../../images/Path-368.svg'
 import { ReactComponent as GrayStar } from '../../images/Path-369.svg'
 export default class ProductView extends Component {
     render() {
-        const { onAddToCart } = this.props
+        const { onAddToCart, showPopup } = this.props
         return (
             <section className="product-view">
                 <div className="images-container">
@@ -130,11 +130,11 @@ export default class ProductView extends Component {
                     </div>
                     <hr className="product-hr" />
                     <h5 className="quantity">Quantity</h5>
-                    <div className="quantity-bar">
+                    <form className="quantity-bar">
                         <button className="decrement">-</button>
                         <span>1</span>
                         <button className="increment">+</button>
-                    </div>
+                    </form>
                     <div className="buttons">
                         <button
                             className="add-to-cart-button"
@@ -146,6 +146,9 @@ export default class ProductView extends Component {
                             Pickup From Store
                         </button>
                     </div>
+                    {showPopup && (
+                        <div className="pop-up">Item added to the cart</div>
+                    )}
                 </div>
             </section>
         )

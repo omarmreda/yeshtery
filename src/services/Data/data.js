@@ -46,8 +46,6 @@ const dataArray = [
         imgUrl: '/images/Group-583@2x.png',
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing.',
         price: '9,999 LE',
-        oldPrice: '9,999 LE',
-        salePercent: '50%',
         rate: '4.2 of 5',
         pickupPlace: 'Gnena Mall'
     },
@@ -56,7 +54,7 @@ const dataArray = [
         description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing.',
         price: '9,999 LE',
         oldPrice: '9,999 LE',
-        salePercent: '50%',
+        salePercent: '70%',
         rate: '4.2 of 5',
         pickupPlace: 'Gnena Mall'
     }

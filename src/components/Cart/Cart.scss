@@ -4,11 +4,13 @@
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
     width: 25%;
-    background-color: #fff;
-    z-index: 999;
+    z-index:999;
+    height: 100vh;
+    background-color: white;
+    transition: all 1s ease;
 }
+
 .close-button{
     position: absolute;
     right:20px;
