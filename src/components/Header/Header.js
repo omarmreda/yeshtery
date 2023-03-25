@@ -1,6 +1,5 @@
 import './Header.scss'
 import { ReactComponent as HabmurgerMenu } from '../../images/Group-770.svg'
-import { ReactComponent as Logo } from '../../images/Group-769.svg'
 import { ReactComponent as Contact } from '../../images/Group-756.svg'
 import { ReactComponent as TrackOrder } from '../../images/Group-758.svg'
 import { ReactComponent as Location } from '../../images/Group-753.svg'
@@ -10,7 +9,11 @@ export default function Header() {
     return (
         <header className="header">
             <HabmurgerMenu className="hamburger" />
-            <Logo />
+            <img
+                src={process.env.PUBLIC_URL + '/images/Group-769.png'}
+                className="header-logo"
+                alt="logo"
+            />
             <LeftArrow className="left-arrow" />
             <p className="header-paragraph">
                 Valentine’s Day Offers! Buy Two Get One Free{' '}

@@ -1,76 +1,260 @@
-
-.product-view{
+@import '../../variables/_variables';
+.product-view {
     display: flex;
 }
-.product-main-image{
-    width:100%;
-    background-color: gray;
-    height:300px;
 
-}
-.images-container{
-    margin-left:19.5%;
-    margin-top:49.5px;
-    display: grid;
-    grid-template-rows: repeat(2 , 1fr);
-    grid-template-columns: 1fr repeat(4,3fr) 1fr;
-    gap: 0;
-    width:36%;
-    row-gap: 5px;
-    column-gap:5px;
-}
-
-.product-main-image{ grid-area: 1 / 1 / 2 / 7; }
-.left-arrow{
-    grid-area:2/1/3/2 ;
-    filter: invert(40%);
-    height: 120px;
-    cursor: pointer;
-}
-.right-arrow{
-    filter: invert(40%);
-    height: 120px;
-    cursor: pointer;
-}
-.front { grid-area: 2 / 2 / 3 / 3; }
-.back { grid-area: 2 / 3 / 3 / 4; }
-.side { grid-area: 2 / 4 / 3 / 5; }
-.tshirt { grid-area: 2 / 5 / 3 / 6; }
-.details-container{
-margin-top: 49.5px;
-width:25%;
-}
-.adidas-logo{
-    display: block;
-}
-.gray{
-    filter: grayscale(100%);
-}
-.sizes{
+.images-container {
+    margin-left: 19.5%;
+    margin-top: 49.5px;
     display: flex;
-    list-style: none;
+    width: 30%;
+    flex-direction: column;
 }
-.quantity-bar{
-    background-color: #d9d9d9;
-    width:50%;
-    height: 48px;
-    border-radius: 24px;
+
+.product-main-image-container {
+    width: 100%;
+    position: relative;
+}
+.product-main-image {
+    width: 100%;
+}
+.yellow{
+    transform: scale(0.7);
+}
+.rotate-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #000040;
+    cursor: pointer;
+}
+.rotate {
+    transform: scale(0.4);
+}
+.arrow-left {
+    width: 2.5%;
+    cursor: pointer;
+}
+.arrow-right {
+    width: 2.5%;
+    cursor: pointer;
+}
+.row-images {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.increment{
-    background-color:#fff200;
+.front {
+    width: 21%;
+}
+.back {
+    width: 21%;
+}
+.side {
+    width: 21%;
+}
+.tshirt {
+    width: 21%;
+}
+.details-container {
+    margin-top: 49.5px;
+    width: 27%;
+}
+.adidas-logo2 {
+    text-align: left;
+}
+.gray {
+    filter: grayscale(100%);
+    transform: scale(0.7);
+}
+.sizes {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    margin-top: 10px;
+    color: $secondary-color;
+    font-size: 10px;
+    font-weight: 500;
+}
+.selected-size {
+    background-color: #ececec;
+}
+.sizes li {
+  box-shadow: 0 0 0 0.5px #a7a9ac;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.category {
+    text-align: left;
+    color: #a7a9ac;
+    margin-top: 4px;
+    font-size: 12px;
+    height: 20px;
+}
+.rate-out-of-5 {
+    font-size: 13px;
+    font-weight: 600;
+}
+.number-of-rates {
+    color: #575756;
+    font-size: 12px;
+    font-weight: 500;
+}
+.rate {
+    display: flex;
+    gap: 12px;
+}
+.product-description {
+    text-align: left;
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d1d1b;
+}
+
+.sale-bar {
+    background-color: $primary-color;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 2px;
+}
+.size {
+    text-align: left;
+    margin-top: 12px;
+    color: #1d1d1b;
+    font-size: 15px;
+    font-weight: 600;
+}
+.gray-price {
+    font-size: 14px;
+    color: #a7a9ac;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.product-hr{
+    border: none;
+    height: 0.5px;
+    background-color: #d9d9d9;
+    margin-top: 10px;
+}
+.price-details {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    gap: 12px;
+}
+.blue-price {
+    color: #542e90;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+.details-container {
+    margin-left: 3%;
+}
+.color {
+    margin-top: 17px;
+    text-align: left;
+    font-size: 14px;
+    color: #1d1d1b;
+    font-weight: 600;
+    height: 22px;
+}
+.color-choices {
+    display: flex;
+    gap: 12px;
+}
+.quantity {
+    margin-top: 18px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d1d1b;
+    height: 30px;
+}
+.quantity-bar {
+    background-color: #f5f5f5;
+    border: 0.5px solid #d9d9d9;
+    width: 40%;
+    height: 35px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2px;
+    font-size: 12px;
+}
+.selected-color {
+    border: 1px solid $secondary-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: scale(0.8);
+}
+.color-choice {
+    cursor: pointer;
+    transform: scale(0.8);
+}
+.increment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
     border: none;
     border-radius: 50%;
-    width:10%;
+    width: 10%;
+    cursor: pointer;
+    height: 22px;
 }
-.decrement{
-    background-color:#fff200;
+.decrement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
     border: none;
     border-radius: 50%;
-    width:10%;
+    width: 10%;
+    cursor: pointer;
+    height: 22px;
 }
-.add-to-cart-button{
-    width:40%;
+.buttons {
+    display: flex;
+    margin-top: 27px;
+    gap: 28px;
+}
+.add-to-cart-button {
+    width: 100%;
+    height: 40px;
+    background-color: $secondary-color;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+.pickup-button {
+    width: 100%;
+    height: 40px;
+    background-color: $primary-color;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 24px;
+    cursor: pointer;
 }

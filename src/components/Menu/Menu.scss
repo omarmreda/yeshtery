@@ -1,64 +1,97 @@
-.menu{
-    width:100%;
-    height:84px;
+@import '../../variables/_variables';
+.menu {
+    width: 100%;
+    height: 84px;
     background-color: #fff;
     display: flex;
     align-items: center;
 }
-.search-input{
+.search-input {
     margin-left: 19%;
-width:18%;
-height:48px;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 24px;
-border: 0.5px solid #D8D8D8;
-padding-left: 1%;
+    width: 18%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    border: 0.5px solid #d8d8d8;
+    padding-left: 1%;
+    .search-icon {
+        cursor: pointer;
+        margin-right: 1%;
+    }
 }
-.search-icon{
-    cursor: pointer;
-    margin-right: 1%;
-}
-
-.adidas-logo{
-    margin-left: 10%;
-    width:4.5%;
-}
-.input{
-    width:100%;
-    height:48px;
+.input {
+    width: 100%;
+    height: 48px;
     border-left: none;
     border: none;
-    border:0.5px solid transparent;
+    border: 0.5px solid transparent;
     background: transparent;
     font-size: 16px;
     color: #000;
     border-radius: inherit;
     outline: none;
-
 }
-.input::placeholder{
-    color:#000;
+.input::placeholder {
+    color: #000;
     font-weight: 600;
+    font-size: 16px;
 }
-.input:-ms-input-placeholder{
-    color:#000;
+.input:-ms-input-placeholder {
+    color: #000;
     font-weight: 600;
+    font-size: 16px;
 }
-.input::-ms-input-placeholder{
-    color:#000;
+.input::-ms-input-placeholder {
+    color: #000;
     font-weight: 600;
+    font-size: 16px;
 }
-.menu-icons{
+.adidas-logo-in-menu {
+    margin-left: 10%;
+    width: 4.3%;
+}
+.cart-icon-container {
+    position: relative;
+    .cart-icon {
+        width: 40%;
+    }
+}
+.cart-icon-container:hover {
+    color: $secondary-color;
+}
+.count-in-cart {
+    position: absolute;
+    background-color: $primary-color;
+    top: 0;
+    left: 29px;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+.menu-icon {
+    width: 23%;
+}
+.menu-icons {
     display: flex;
     list-style: none;
-    margin-left: 11.6%;
-    width:20%;
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: 600;
+    width: 20%;
+    gap: 10px;
     align-items: center;
+    li {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        padding-left: 5%;
+        cursor: pointer;
+    }
 }
-.menu-icons li{
-    display: flex;
-    align-items: center;
-    padding-left: 5%;
-}
+
